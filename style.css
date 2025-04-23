@@ -1,25 +1,24 @@
 html {
-    background-color: slategrey;
+    background-color: lightgray;
 }
 
 .header {
-    background-color: lightblue;
     text-align: center;
     padding: 20px;
     font-family: 'Gill Sans', Georgia, Times, serif;
+    color: slategray;
 }
 
 /* The navigation bar container */
 .topnav {
     overflow: hidden;
-    background-color: lightskyblue;
 }
 
 /* Navigation bar links */
 .topnav a {
     float: center;
     display: block;
-    color: navy;
+    color: slategray;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -27,12 +26,10 @@ html {
 
 /* Links - change color on hover */
 .topnav a:hover {
-    background-color: lightblue;
-    color: white;
+    color: purple;
 }
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: lightblue;
-    color: white;
+    color: purple;
 }
