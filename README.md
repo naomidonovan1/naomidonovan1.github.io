@@ -1,6 +1,0 @@
-## Naomi Donovan
-
-#### Summary
-
-
-#### CV
