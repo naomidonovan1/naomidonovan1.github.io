@@ -1,3 +1,7 @@
+html {
+    background-color: slategrey;
+}
+
 .header {
     background-color: lightblue;
     text-align: center;
@@ -12,7 +16,7 @@
 
 /* Navigation bar links */
 .topnav a {
-    float: left;
+    float: center;
     display: block;
     color: navy;
     text-align: center;
