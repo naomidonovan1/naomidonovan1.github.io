@@ -39,26 +39,11 @@ html {
 /* Profile section */
 .profile-bio {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 30px;
-    flex-wrap: wrap;
 }
 
-.profile-pic-wrapper {
-    flex: 1;
-    min-width: 100px;
-    max-width: 150px;
-}
-
-.profile-pic {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.profile-text {
-    flex: 2;
-    min-width: 250px;
+.profile-bio-content {
+    margin-left: 5px;
+    font-family: 'Gill Sans', Georgia, Times, serif;
+    color: slategray;
+    margin-top: 0;
 }
