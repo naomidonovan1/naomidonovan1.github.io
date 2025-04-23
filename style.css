@@ -41,6 +41,10 @@ html {
     display: flex;
 }
 
+.profile-pic {
+    width: 50px;
+}
+
 .profile-bio-content {
     margin-left: 5px;
     font-family: 'Gill Sans', Georgia, Times, serif;
