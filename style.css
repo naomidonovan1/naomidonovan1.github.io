@@ -12,6 +12,7 @@ html {
 /* The navigation bar container */
 .topnav {
     overflow: hidden;
+    font-family: 'Gill Sans', Georgia, Times, serif;
 }
 
 /* Navigation bar links */
@@ -22,6 +23,7 @@ html {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: 'Gill Sans', Georgia, Times, serif;
 }
 
 /* Links - change color on hover */
