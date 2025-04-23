@@ -3,3 +3,25 @@
     text-align: center;
     padding: 20px;
 }
+
+/* The navigation bar container */
+.topnav {
+    overflow: hidden;
+    background-color: lightskyblue;
+}
+
+/* Navigation bar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: navy;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Links - change color on hover */
+.topnav a:hover {
+    background-color: lightblue;
+    color: white;
+}
