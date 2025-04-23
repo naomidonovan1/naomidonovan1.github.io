@@ -35,3 +35,30 @@ html {
 .topnav a.active {
     color: purple;
 }
+
+/* Profile section */
+.profile-bio {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.profile-pic-wrapper {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.profile-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-text {
+    flex: 2;
+    min-width: 250px;
+}
