@@ -18,7 +18,8 @@ html {
 /* Navigation bar links */
 .topnav a {
     float: center;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     color: slategray;
     text-align: center;
     padding: 14px 16px;
