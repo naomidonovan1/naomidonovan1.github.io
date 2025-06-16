@@ -48,6 +48,24 @@
             margin-top: 0.5rem;
         }
 
+        .toggle-theme {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: 1px solid var(--accent-color);
+            color: var(--accent-color);
+            padding: 0.4rem 0.8rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .toggle-theme:hover {
+            background: var(--accent-color);
+            color: white;
+        }
+
         .container {
             max-width: 900px;
             margin: 2rem auto;
@@ -129,6 +147,7 @@
     <header>
         <h1>Naomi Donovan</h1>
         <p>Computational Neuroscientist | PhD Candidate | Ironman Athlete</p>
+        <button class="toggle-theme" onclick="toggleTheme()">Toggle Dark Mode</button>
     </header>
 
     <div class="container">
@@ -162,6 +181,21 @@
                 <div class="project-card">
                     <h3>Open Source V1 Survey</h3>
                     <p>Contributed to an open-access database capturing functional organization across V1 layers.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Blog</h2>
+            <div class="projects-grid">
+                <div class="blog-post">
+                    <h3>Why Transformers Might Be the Key to Understanding Vision</h3>
+                    <p>A deep dive into how transformer architectures parallel cortical processing in the visual system.
+                    </p>
+                </div>
+                <div class="blog-post">
+                    <h3>What I Learned Training for an Ironman While Doing a PhD</h3>
+                    <p>Lessons on endurance, time management, and resilience from two intense pursuits.</p>
                 </div>
             </div>
         </section>
