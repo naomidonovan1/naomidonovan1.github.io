@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformer Models of Visual Cortex | Naomi Donovan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Naomi Donovan</h1>
+        <p>Computational Neuroscientist | PhD Candidate | Ironman Athlete</p>
+        <button class="toggle-theme" onclick="toggleTheme()">Toggle Dark Mode</button>
+    </header>
+
+    <div class="container">
+        <a href="../index.html"
+            style="text-decoration:none;color:var(--accent-color);display:inline-block;margin-bottom:1rem;">&larr; Back
+            to Home</a>
+
+        <section>
+            <h2>Transformer Models of Visual Cortex</h2>
+            <p>
+                This project explores how self-attention mechanisms in transformers can model the hierarchical and
+                predictive dynamics of the primary visual cortex (V1). Inspired by biological plausibility and recent
+                deep learning advances, we simulate stimulus-driven activity across cortical layers.
+            </p>
+            <p>
+                We use synthetic drifting gratings, fit linear-nonlinear models to V1 layer-specific responses, and test
+                whether transformers trained on this data capture canonical feedforward and feedback motifs.
+            </p>
+        </section>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Naomi Donovan. Built with HTML & CSS, hosted on GitHub Pages.
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const isDark = document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+
+        window.onload = () => {
+            if (localStorage.getItem('theme') === 'dark') {
+                document.body.classList.add('dark-mode');
+            }
+        }
+    </script>
+</body>
+
+</html>
