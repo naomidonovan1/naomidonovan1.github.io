@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transformer Models of Visual Cortex | Naomi Donovan</title>
+    <title>Transformer Models of Neural Functional Connectivity</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css" />
 </head>
@@ -12,7 +12,7 @@
 <body>
     <header>
         <h1>Naomi Donovan</h1>
-        <p>Computational Neuroscientist | PhD Candidate | Ironman Athlete</p>
+        <p>Neuroscience PhD Candidate @ UCSF</p>
         <button class="toggle-theme" onclick="toggleTheme()">Toggle Dark Mode</button>
     </header>
 
@@ -22,15 +22,25 @@
             to Home</a>
 
         <section>
-            <h2>Transformer Models of Visual Cortex</h2>
+            <h2>Transformer Models of Neural Functional Connectivity</h2>
             <p>
-                This project explores how self-attention mechanisms in transformers can model the hierarchical and
-                predictive dynamics of the primary visual cortex (V1). Inspired by biological plausibility and recent
-                deep learning advances, we simulate stimulus-driven activity across cortical layers.
-            </p>
-            <p>
-                We use synthetic drifting gratings, fit linear-nonlinear models to V1 layer-specific responses, and test
-                whether transformers trained on this data capture canonical feedforward and feedback motifs.
+                This project explores how transformer-based models can be used to capture
+                neural functional connectivity relationships. Specifically, we designed two
+                different methods that take advantage of transformer models' ability to
+                capture long-range dependencies and nonlinear interactions.
+                white-space: pre-line;
+                The first method uses a encoder transformer architecture trained to
+                reconstruct multivariate neural time-series data. Via 'cls'-like tokens,
+                we can extract pairwise functional connectivity metrics between neurons.
+                white-space: pre-line;
+                The second method used a pretrained time-series forecasting transformer
+                model, called CHRONOS, which can accurately predict univariate neural time-series data.
+                We fine-tuned CHRONOS on neural data, then used information learned from
+                inclusion or exclusion of other neurons' covariates to infer functional connectivity.
+                white-space: pre-line;
+                We validated both methods on simulated neural data with known ground-truth
+                connectivity, then applied them to either (1) neural spiking data (i.e. Neuropixels)
+                or (2) neural calcium data (i.e. 2P and 3P Ca2+ imaging).
             </p>
         </section>
     </div>
