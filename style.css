@@ -155,7 +155,7 @@ ul.links li a:hover {
     overflow: hidden;
     transition: all 0.3s ease;
     position: relative;
-    min-height: 80px;
+    min-height: 120px;
     /* ensures space for the title */
 }
 
