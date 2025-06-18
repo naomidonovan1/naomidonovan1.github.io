@@ -125,7 +125,7 @@ ul.links li a:hover {
     gap: 1.5rem;
 }
 
-.project-card,
+/* .project-card,
 .blog-post {
     background: var(--card-bg);
     border-radius: 12px;
@@ -134,17 +134,12 @@ ul.links li a:hover {
     transition: transform 0.2s ease, background-color 0.3s, color 0.3s;
 }
 
-.project-card:hover,
-.blog-post:hover {
-    transform: translateY(-4px);
-}
-
 .project-card a,
 .blog-post a {
     text-decoration: none;
     color: inherit;
     display: block;
-}
+} */
 
 .footer {
     text-align: center;
@@ -155,34 +150,42 @@ ul.links li a:hover {
 
 .project-card {
     position: relative;
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px var(--shadow);
+    transition: transform 0.2s ease;
     overflow: hidden;
 }
 
-.project-card .preview {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    position: relative;
+}
+
+.project-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    color: var(--accent-color);
+}
+
+.project-card .hover-description {
+    margin-top: 0.5rem;
     opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-    z-index: 5;
+    max-height: 0;
+    overflow: hidden;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
-.project-card:hover .preview {
+.project-card:hover .hover-description {
     opacity: 1;
-    pointer-events: auto;
-}
-
-.project-card .preview iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-    transform: scale(0.8);
-    transform-origin: top left;
-    pointer-events: none;
-    /* makes it non-clickable */
-    filter: grayscale(0.3) blur(1px);
-    border-radius: 8px;
+    max-height: 100px;
 }
