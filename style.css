@@ -135,15 +135,15 @@ ul.links li a:hover {
 }
 
 .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     background: var(--card-bg);
     border-radius: 12px;
     box-shadow: 0 2px 6px var(--shadow);
     transition: transform 0.2s ease;
     overflow: hidden;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    min-height: auto;
 }
 
 .project-card a {
