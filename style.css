@@ -176,14 +176,15 @@ ul.links li a:hover {
 /* Description is hidden initially */
 .hover-description {
     opacity: 0;
-    height: 0;
+    max-height: 0;
     overflow: hidden;
     margin-top: 0.5rem;
-    transition: opacity 0.3s ease, height 0.3s ease;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
 }
 
-/* On hover, show the description */
+/* On hover, smoothly expand */
 .project-card:hover .hover-description {
+    max-height: 300px;
+    /* adjust based on content length */
     opacity: 1;
-    height: auto;
 }
