@@ -149,43 +149,42 @@ ul.links li a:hover {
 }
 
 .project-card {
-    position: relative;
     background: var(--card-bg);
     border-radius: 12px;
-    padding: 1rem;
     box-shadow: 0 2px 6px var(--shadow);
-    transition: transform 0.2s ease;
     overflow: hidden;
+    transition: all 0.3s ease;
+    max-height: 60px;
+    /* only fits the title */
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    max-height: 200px;
+    /* expands to reveal the paragraph */
 }
 
 .project-card a {
     text-decoration: none;
     color: inherit;
     display: block;
-    position: relative;
+    padding: 1rem;
 }
 
 .project-card h3 {
     font-size: 1.2rem;
-    margin-bottom: 0;
+    margin: 0;
     color: var(--accent-color);
 }
 
-.project-card .hover-description {
-    margin-top: 0.5rem;
+.hover-description {
+    margin-top: 0.75rem;
     opacity: 0;
+    transition: opacity 0.3s ease;
     max-height: 0;
     overflow: hidden;
-    color: var(--text-color);
-    font-size: 0.95rem;
-    transition: opacity 0.3s ease, max-height 0.3s ease;
 }
 
 .project-card:hover .hover-description {
     opacity: 1;
-    max-height: 100px;
+    max-height: 200px;
 }
