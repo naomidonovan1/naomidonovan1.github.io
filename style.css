@@ -152,3 +152,37 @@ ul.links li a:hover {
     font-size: 0.9rem;
     color: #a0aec0;
 }
+
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card .preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    z-index: 5;
+}
+
+.project-card:hover .preview {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.project-card .preview iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transform: scale(0.8);
+    transform-origin: top left;
+    pointer-events: none;
+    /* makes it non-clickable */
+    filter: grayscale(0.3) blur(1px);
+    border-radius: 8px;
+}
