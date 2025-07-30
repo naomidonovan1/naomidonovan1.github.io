@@ -201,6 +201,11 @@ ul.links li a:hover {
     text-decoration: none;
 }
 
+.paper-entry h2 a:visited {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
 .paper-entry h2 a:hover {
     text-decoration: underline;
     color: var(--accent-color);
