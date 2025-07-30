@@ -51,12 +51,6 @@ header h2 {
     color: var(--primary-color);
 }
 
-header h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: var(--primary-color);
-}
-
 header p {
     font-size: 1.1rem;
     color: var(--text-color);
@@ -203,8 +197,13 @@ ul.links li a:hover {
 }
 
 .paper-entry h2 a {
-    color: #333;
+    color: var(--primary-color);
     text-decoration: none;
+}
+
+.paper-entry h2 a:hover {
+    text-decoration: underline;
+    color: var(--accent-color);
 }
 
 .tag {
