@@ -109,9 +109,23 @@
     <script>
         const searchInput = document.getElementById('searchInput');
         const papers = document.querySelectorAll('.paper-entry');
+        let scrolledToSearch = false;
 
         searchInput.addEventListener('input', () => {
             const query = searchInput.value.toLowerCase();
+
+            // Scroll to the search box (but only once after typing starts)
+            if (!scrolledToSearch && query.length > 0) {
+                document.querySelector('.search-box').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                scrolledToSearch = true;
+            }
+
+            // Reset if cleared
+            if (query.length === 0) {
+                scrolledToSearch = false;
+            }
+
+            // Filter papers
             papers.forEach(paper => {
                 const text = paper.innerText.toLowerCase();
                 paper.style.display = text.includes(query) ? 'block' : 'none';
