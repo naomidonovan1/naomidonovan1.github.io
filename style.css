@@ -208,12 +208,8 @@ ul.links li a:hover {
 }
 
 .tag {
-    background-color: var(--card-bg);
-    color: #444;
-    padding: 0.2em 0.5em;
-    border-radius: 4px;
-    font-size: 1rem;
-    margin-right: 5px;
+    font-weight: bold;
+    margin-right: 0.5rem;
 }
 
 .summary {
