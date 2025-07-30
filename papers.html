@@ -20,13 +20,27 @@
 </head>
 
 <body>
-
     <header>
-        <h1>📚 Reading List</h1>
-        <p>A growing archive of research papers I've read with summaries and tags. Click on a paper title to read it
-            online.</p>
-        <a href="index.html">← Back to Home</a>
+        <h1>Naomi Donovan</h1>
+        <p>Neuroscience PhD Candidate @ UCSF</p>
+        <button class="toggle-theme" onclick="toggleTheme()">Toggle Dark Mode</button>
     </header>
+
+    <div class="container">
+        <a href="../index.html"
+            style="text-decoration:none;color:var(--accent-color);display:inline-block;margin-bottom:1rem;">&larr; Back
+            to Home</a>
+
+        <section>
+            <h2>Reading List</h2>
+            <p>
+                growing archive of research papers I've read (or skimmed) with summaries and tags. Click on a paper
+                title
+                to read it
+                online.
+            </p>
+        </section>
+    </div>
 
     <div class="search-box">
         <input type="text" id="searchInput" placeholder="Search papers by title, tag, or summary...">
