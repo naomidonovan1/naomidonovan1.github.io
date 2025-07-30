@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Reading List</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .search-box {
+            margin: 1rem 0;
+        }
+
+        #searchInput {
+            padding: 0.5rem;
+            width: 100%;
+            max-width: 400px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>📚 Reading List</h1>
+        <p>A growing archive of research papers I've read with summaries and tags. Click on a paper title to read it
+            online.</p>
+        <a href="index.html">← Back to Home</a>
+    </header>
+
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search papers by title, tag, or summary...">
+    </div>
+
+    <main id="paperList">
+        <section class="paper-entry">
+            <h2><a href="https://arxiv.org/abs/2106.04560" target="_blank">Vanilla Transformers Are Not Enough</a></h2>
+            <p><strong>Tags:</strong> <span class="tag">transformer</span>, <span class="tag">vision</span></p>
+            <p class="summary">Explores the limitations of standard transformer architectures in vision tasks without
+                spatial priors.</p>
+        </section>
+
+        <section class="paper-entry">
+            <h2><a href="https://arxiv.org/abs/2002.05709" target="_blank">A Simple Framework for Contrastive
+                    Learning</a></h2>
+            <p><strong>Tags:</strong> <span class="tag">self-supervised</span>, <span class="tag">contrastive</span></p>
+            <p class="summary">Introduces SimCLR, a powerful self-supervised approach that learns visual representations
+                without labels.</p>
+        </section>
+    </main>
+
+    <script>
+        const searchInput = document.getElementById('searchInput');
+        const papers = document.querySelectorAll('.paper-entry');
+
+        searchInput.addEventListener('input', () => {
+            const query = searchInput.value.toLowerCase();
+            papers.forEach(paper => {
+                const text = paper.innerText.toLowerCase();
+                paper.style.display = text.includes(query) ? 'block' : 'none';
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -174,3 +174,30 @@ ul.links li a:hover {
     /* adjust based on content length */
     opacity: 1;
 }
+
+.paper-entry {
+    border-left: 4px solid #888;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.paper-entry h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.tag {
+    background-color: #eee;
+    color: #444;
+    padding: 0.2em 0.5em;
+    border-radius: 4px;
+    font-size: 0.85em;
+    margin-right: 5px;
+}
+
+.summary {
+    font-style: italic;
+    color: #555;
+}
