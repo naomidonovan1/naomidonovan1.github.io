@@ -209,7 +209,9 @@ ul.links li a:hover {
 
 .tag {
     font-weight: bold;
-    margin-right: 0.5rem;
+    font-style: italic;
+    color: var(--accent-color);
+    margin-right: 0.75rem;
 }
 
 .summary {
